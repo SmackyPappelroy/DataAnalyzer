@@ -61,17 +61,52 @@ button {
   cursor: pointer;
 }
 
-.grid {
+.panel-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
   margin-top: 24px;
 }
 
-.card {
+.panel {
   background: #fff;
   padding: 16px;
   border-radius: 12px;
   border: 1px solid #e2e8f0;
   min-height: 120px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+input,
+select,
+textarea {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5f5;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.status {
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.muted {
+  color: #64748b;
+}
+
+.dataset-list ul,
+.recipe-output ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
 }
